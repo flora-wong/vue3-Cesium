@@ -24,7 +24,7 @@ interface Movement {
 export default class CesiumIns {
   static Cesium: typeof Cesium
   static viewer: any
-  static token = 'cbaab337a925c65bf48b2fbc28dbe27d'
+  static token = ''
   // 服务域名
   static tdtUrl = 'https://t{s}.tianditu.gov.cn/'
   // 服务负载子域
@@ -110,9 +110,7 @@ export default class CesiumIns {
         CesiumIns.Cesium = window.Cesium
 
         // Set default access token
-        CesiumIns.Cesium.Ion.defaultAccessToken =
-          'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI2MDQyYmE4NC1mMDBkLTRjZjItYTNkOC0yNThlODY3MjQ4NzYiLCJpZCI6NTYwMzEsImlhdCI6MTYyMTIxODExOH0.gSO5_Wx1WyujkeHypFKrIQ0BElvoOImrrXABWjOk1X4'
-
+        CesiumIns.Cesium.Ion.defaultAccessToken =''
         // Create viewer with merged config
         const defaultConfig = {
           shouldAnimate: true, // 开启动画
