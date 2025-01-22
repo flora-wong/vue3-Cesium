@@ -6,10 +6,10 @@ let map: unknown = null
 
 onMounted(() => {
   window._AMapSecurityConfig = {
-    securityJsCode: '482052271c5746d5accb1cd3f87861a7',
+    securityJsCode: '',
   }
   AMapLoader.load({
-    key: 'a4e149b2e8dfe8bfa7a8fc0838dcb1e7', // 申请好的Web端开发者Key，首次调用 load 时必填
+    key: '', // 申请好的Web端开发者Key，首次调用 load 时必填
     version: '2.1Beta', // 指定要加载的 JSAPI 的版本，缺省时默认为 1.4.15
     plugins: ['AMap.Scale'], //需要使用的的插件列表，如比例尺'AMap.Scale'，支持添加多个如：['...','...']
   })
